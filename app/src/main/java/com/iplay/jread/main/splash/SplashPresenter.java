@@ -1,9 +1,9 @@
 package com.iplay.jread.main.splash;
 
-import com.iplay.jread.img.app.MyApplication;
-import com.iplay.jread.img.data.bean.GirlsBean;
-import com.iplay.jread.img.data.source.GirlsDataSource;
-import com.iplay.jread.img.data.source.GirlsResponsitory;
+import com.iplay.jread.mm.app.MyApplication;
+import com.iplay.jread.mm.data.bean.GirlsBean;
+import com.iplay.jread.mm.data.source.GirlsDataSource;
+import com.iplay.jread.mm.data.source.GirlsResponsitory;
 
 /**
  * Created by oracleen on 2016/6/28.

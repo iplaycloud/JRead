@@ -8,10 +8,16 @@
     android:fitsSystemWindows="true"
     tools:context=".main.widget.MainActivity">
 
-    <android.support.design.widget.CoordinatorLayout
-        android:id="@+id/main_content"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:id="@+id/main_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
         <include
             android:id="@+id/appbar"
             layout="@layout/toolbar" />
@@ -19,13 +25,55 @@
         <FrameLayout
             android:id="@+id/frame_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_below="@+id/appbar"
             android:scrollbars="none"
             android:elevation="5dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            android:layout_weight="1"
+            />
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" -->
 
-    </android.support.design.widget.CoordinatorLayout>
+        <LinearLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="@string/main_menu_news"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:text="@string/main_menu_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:text="@string/main_menu_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:text="@string/main_menu_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation_view"

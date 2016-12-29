@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-import com.iplay.jread.img.app.MyApplication;
+import com.iplay.jread.mm.app.MyApplication;
 
 /**
  * bitmap处理工具类

@@ -16,20 +16,20 @@
         "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\img_content_home.xml",
-        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\layout\\img_content_home.xml"
-    },
-    {
-        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\img_item_girl_detail.xml",
+        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\layout\\img_item_girl_detail.xml"
     },
     {
         "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\img_fragment_splash.xml",
         "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\layout\\img_fragment_splash.xml"
     },
     {
-        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\img_item_girl_detail.xml",
-        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\layout\\img_item_girl_detail.xml"
+        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\img_content_home.xml",
+        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\layout\\img_content_home.xml"
     },
     {
         "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",

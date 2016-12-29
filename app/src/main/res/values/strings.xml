@@ -4,6 +4,8 @@
 
     <string name="navigation_news">新闻</string>
     <string name="navigation_images">图片</string>
+    <string name="navigation_mm">美女</string>
+    <string name="navigation_video">视频</string>
     <string name="navigation_weather">天气</string>
     <string name="navigation_about">关于</string>
     <string name="drawer_open">Open</string>
@@ -30,7 +32,7 @@
 
     <string name="image_hit">一次只加载20条，查看更多内容请刷新哦。</string>
     <string name="version">Version：V1.1</string>
-    <string name="navigation_video">视频</string>
+
 
     <string name="action_about">关于我</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
@@ -127,6 +129,10 @@
     <string name="action_share">share</string>
     <string name="meizhi">MeiZhi</string>
     <string name="version_str">PrettyGirls\npleasecallmecoder</string>
+    <string name="main_menu_setting">设置</string>
+    <string name="main_menu_video">视频</string>
+    <string name="main_menu_image">图片</string>
+    <string name="main_menu_news">新闻</string>
 
 
 </resources>

@@ -26,6 +26,12 @@ public class MainPresenterImpl implements MainPresenter {
             case R.id.navigation_item_images:
                 mMainView.switch2Images();
                 break;
+            case R.id.navigation_item_mm:
+                mMainView.switch2Mm();
+                break;
+            case R.id.navigation_item_video:
+                mMainView.switch2Video();
+                break;
             case R.id.navigation_item_weather:
                 mMainView.switch2Weather();
                 break;

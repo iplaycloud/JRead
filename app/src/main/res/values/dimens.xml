@@ -12,6 +12,6 @@
     <dimen name="sn_12sp">12sp</dimen>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="app_bar_height">120dp</dimen>
+    <dimen name="app_bar_height">30dp</dimen>
     <dimen name="text_margin">16dp</dimen>
 </resources>

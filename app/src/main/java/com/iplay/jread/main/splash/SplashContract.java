@@ -1,7 +1,7 @@
 package com.iplay.jread.main.splash;
 
-import com.iplay.jread.img.BasePresenter;
-import com.iplay.jread.img.BaseView;
+import com.iplay.jread.mm.base.BasePresenter;
+import com.iplay.jread.mm.base.BaseView;
 
 /**
  * Created by oracleen on 2016/6/28.

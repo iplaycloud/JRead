@@ -17,7 +17,7 @@ import butterknife.Unbinder;
 import com.iplay.jread.R;
 import com.iplay.jread.commons.base.ActivityManager;
 import com.iplay.jread.commons.base.BaseFragment;
-import com.iplay.jread.img.home.GirlsActivity;
+import com.iplay.jread.mm.home.GirlsActivity;
 
 /**
  * Created by oracleen on 2016/6/28.

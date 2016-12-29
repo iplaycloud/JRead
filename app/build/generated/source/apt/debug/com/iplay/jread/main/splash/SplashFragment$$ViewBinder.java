@@ -21,7 +21,7 @@ public class SplashFragment$$ViewBinder<T extends SplashFragment> implements Vie
     protected InnerUnbinder(T target, Finder finder, Object source) {
       this.target = target;
 
-      target.mSplashImg = finder.findRequiredViewAsType(source, 2131493018, "field 'mSplashImg'", ImageView.class);
+      target.mSplashImg = finder.findRequiredViewAsType(source, 2131493017, "field 'mSplashImg'", ImageView.class);
     }
 
     @Override

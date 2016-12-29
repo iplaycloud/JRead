@@ -29,15 +29,15 @@ public final class R {
 		public static final int item_touch_helper_swipe_escape_velocity = 0x7f08006e;
 	}
 	public static final class id {
-		public static final int empty = 0x7f0c00a2;
-		public static final int error = 0x7f0c00a3;
+		public static final int empty = 0x7f0c00a1;
+		public static final int error = 0x7f0c00a2;
 		public static final int insideInset = 0x7f0c003b;
 		public static final int insideOverlay = 0x7f0c003c;
 		public static final int item_touch_helper_previous_elevation = 0x7f0c0005;
 		public static final int outsideInset = 0x7f0c003d;
 		public static final int outsideOverlay = 0x7f0c003e;
-		public static final int progress = 0x7f0c0075;
-		public static final int ptr_layout = 0x7f0c00a1;
+		public static final int progress = 0x7f0c0074;
+		public static final int ptr_layout = 0x7f0c00a0;
 	}
 	public static final class layout {
 		public static final int layout_progress_recyclerview = 0x7f04003e;

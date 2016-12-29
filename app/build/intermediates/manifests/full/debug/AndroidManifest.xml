@@ -31,9 +31,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.iplay.jread.news.widget.NewsDetailActivity" />
-        <activity android:name="com.iplay.jread.img.home.GirlsActivity" />
-        <activity android:name="com.iplay.jread.img.girl.GirlActivity" />
-        <activity android:name="com.iplay.jread.img.about.AboutActivity" />
+        <activity android:name="com.iplay.jread.mm.home.GirlsActivity" />
+        <activity android:name="com.iplay.jread.mm.girl.GirlActivity" />
     </application>
 
 </manifest>

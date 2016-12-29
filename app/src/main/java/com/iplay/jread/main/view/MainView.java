@@ -10,6 +10,8 @@ package com.iplay.jread.main.view;
 public interface MainView {
     void switch2News();
     void switch2Images();
+    void switch2Mm();
+    void switch2Video();
     void switch2Weather();
     void switch2About();
 }

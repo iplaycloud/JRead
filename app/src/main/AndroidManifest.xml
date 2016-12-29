@@ -29,9 +29,8 @@
         </activity>
 
         <activity android:name=".news.widget.NewsDetailActivity" />
-        <activity android:name=".img.home.GirlsActivity" />
-        <activity android:name=".img.girl.GirlActivity" />
-        <activity android:name=".img.about.AboutActivity" />
+        <activity android:name=".mm.home.GirlsActivity" />
+        <activity android:name=".mm.girl.GirlActivity" />
     </application>
 
 </manifest>

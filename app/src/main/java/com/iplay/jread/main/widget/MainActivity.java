@@ -9,14 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.iplay.jread.R;
 import com.iplay.jread.about.widget.AboutFragment;
-import com.iplay.jread.commons.base.ActivityManager;
-import com.iplay.jread.commons.base.AppActivity;
-import com.iplay.jread.commons.base.BaseFragment;
-import com.iplay.jread.img.home.GirlsActivity;
+import com.iplay.jread.images.widget.ImageFragment;
+import com.iplay.jread.mm.home.GirlsActivity;
 import com.iplay.jread.main.presenter.MainPresenter;
 import com.iplay.jread.main.presenter.MainPresenterImpl;
 import com.iplay.jread.main.view.MainView;
@@ -101,11 +98,20 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void switch2Images() {
-        //getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ImageFragment()).commit();
-        //mToolbar.setTitle(R.string.navigation_images);
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ImageFragment()).commit();
+        mToolbar.setTitle(R.string.navigation_images);
 
-        startActivity(new Intent(this, GirlsActivity.class));
         //ActivityManager.getInstance().finishActivity();
+    }
+
+    @Override
+    public void switch2Mm() {
+        startActivity(new Intent(this, GirlsActivity.class));
+    }
+
+    @Override
+    public void switch2Video() {
+
     }
 
     @Override

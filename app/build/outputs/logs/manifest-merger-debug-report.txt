@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml
@@ -46,7 +46,7 @@ ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManif
 	android:name
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:13:22-81
 application
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:15:5-35:19
+ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:15:5-34:19
 MERGED from [JRead:swipeback:unspecified] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\JRead\swipeback\unspecified\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
@@ -83,18 +83,14 @@ activity#com.iplay.jread.news.widget.NewsDetailActivity
 ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:31:9-68
 	android:name
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:31:19-65
-activity#com.iplay.jread.img.home.GirlsActivity
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:9-60
+activity#com.iplay.jread.mm.home.GirlsActivity
+ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:9-59
 	android:name
-		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:19-57
-activity#com.iplay.jread.img.girl.GirlActivity
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:33:9-59
+		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:19-56
+activity#com.iplay.jread.mm.girl.GirlActivity
+ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:33:9-58
 	android:name
-		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:33:19-56
-activity#com.iplay.jread.img.about.AboutActivity
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:34:9-61
-	android:name
-		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:34:19-58
+		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:33:19-55
 uses-sdk
 INJECTED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
