@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import com.iplay.jread.R;
 import com.iplay.jread.news.model.beans.NewsBean;
 import com.iplay.jread.commons.Urls;
-import com.iplay.jread.news.NewsAdapter;
+import com.iplay.jread.news.model.NewsAdapter;
 import com.iplay.jread.news.presenter.NewsPresenter;
 import com.iplay.jread.news.presenter.NewsPresenterImpl;
 import com.iplay.jread.news.view.NewsView;
@@ -85,7 +85,12 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
         mAdapter.setOnItemClickListener(mOnItemClickListener);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.addOnScrollListener(mOnScrollListener);
+
+        /*
+        * 刷新数据
+        * */
         onRefresh();
+
         return view;
     }
 
@@ -102,6 +107,7 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
         @Override
         public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
             super.onScrollStateChanged(recyclerView, newState);
+
             if (newState == RecyclerView.SCROLL_STATE_IDLE
                     && lastVisibleItem + 1 == mAdapter.getItemCount()
                     && mAdapter.isShowFooter()) {
@@ -109,6 +115,7 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
                 LogUtils.d(TAG, "loading more data");
                 mNewsPresenter.loadNews(mType, pageIndex + Urls.PAZE_SIZE);
             }
+
         }
     };
 
@@ -171,12 +178,19 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
         Snackbar.make(view, getString(R.string.load_fail), Snackbar.LENGTH_SHORT).show();
     }
 
+    /*
+    * 下拉刷新
+    * */
     @Override
     public void onRefresh() {
         pageIndex = 0;
         if(mData != null) {
             mData.clear();
         }
+
+        /*
+        * 加载数据
+        * */
         mNewsPresenter.loadNews(mType, pageIndex);
     }
 

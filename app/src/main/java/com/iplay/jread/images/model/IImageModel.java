@@ -7,6 +7,6 @@ package com.iplay.jread.images.model;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/22
  */
-public interface ImageModel {
+public interface IImageModel {
     void loadImageList(ImageModelImpl.OnLoadImageListListener listener);
 }

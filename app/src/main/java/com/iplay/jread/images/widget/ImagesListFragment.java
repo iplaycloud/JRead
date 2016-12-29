@@ -14,13 +14,16 @@ import android.view.ViewGroup;
 
 import com.iplay.jread.R;
 import com.iplay.jread.images.model.beans.ImageBean;
-import com.iplay.jread.images.ImageAdapter;
+import com.iplay.jread.images.model.ImageAdapter;
 import com.iplay.jread.images.presenter.ImagePresenter;
 import com.iplay.jread.images.presenter.ImagePresenterImpl;
-import com.iplay.jread.images.view.ImageView;
+import com.iplay.jread.images.view.IImageView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Description :
@@ -29,16 +32,29 @@ import java.util.List;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/22
  */
-public class ImageFragment extends Fragment implements ImageView, SwipeRefreshLayout.OnRefreshListener {
+public class ImagesListFragment extends Fragment implements IImageView, SwipeRefreshLayout.OnRefreshListener {
 
-    private static final String TAG = "ImageFragment";
+    private static final String TAG = "ImagesListFragment";
 
-    private SwipeRefreshLayout mSwipeRefreshWidget;
-    private RecyclerView mRecyclerView;
+    @BindView(R.id.swipe_refresh_widget)
+    SwipeRefreshLayout mSwipeRefreshWidget;
+
+    @BindView(R.id.recycle_view)
+    RecyclerView mRecyclerView;
+
     private LinearLayoutManager mLayoutManager;
+
     private ImageAdapter mAdapter;
     private List<ImageBean> mData;
     private ImagePresenter mImagePresenter;
+
+    public static ImagesListFragment newInstance(int type) {
+        Bundle args = new Bundle();
+        ImagesListFragment fragment = new ImagesListFragment();
+        args.putInt("type", type);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,14 +65,25 @@ public class ImageFragment extends Fragment implements ImageView, SwipeRefreshLa
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_image, null);
-        mSwipeRefreshWidget = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh_widget);
+
+        ButterKnife.bind(this, view);
+
+        initView();
+
+        onRefresh();
+
+        return view;
+    }
+
+    private void initView() {
+
         mSwipeRefreshWidget.setColorSchemeResources(R.color.primary,
                 R.color.primary_dark, R.color.primary_light,
                 R.color.accent);
         mSwipeRefreshWidget.setOnRefreshListener(this);
 
-        mRecyclerView = (RecyclerView)view.findViewById(R.id.recycle_view);
         mRecyclerView.setHasFixedSize(true);
 
         mLayoutManager = new LinearLayoutManager(getActivity());
@@ -66,8 +93,6 @@ public class ImageFragment extends Fragment implements ImageView, SwipeRefreshLa
         mAdapter = new ImageAdapter(getActivity().getApplicationContext());
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.addOnScrollListener(mOnScrollListener);
-        onRefresh();
-        return view;
     }
 
     private RecyclerView.OnScrollListener mOnScrollListener = new RecyclerView.OnScrollListener() {
@@ -82,7 +107,9 @@ public class ImageFragment extends Fragment implements ImageView, SwipeRefreshLa
 
         @Override
         public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+
             super.onScrollStateChanged(recyclerView, newState);
+
             if (newState == RecyclerView.SCROLL_STATE_IDLE
                     && lastVisibleItem + 1 == mAdapter.getItemCount() ) {
                 //加载更多

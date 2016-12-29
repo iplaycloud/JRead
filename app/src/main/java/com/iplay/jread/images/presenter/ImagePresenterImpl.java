@@ -1,9 +1,9 @@
 package com.iplay.jread.images.presenter;
 
 import com.iplay.jread.images.model.beans.ImageBean;
-import com.iplay.jread.images.model.ImageModel;
+import com.iplay.jread.images.model.IImageModel;
 import com.iplay.jread.images.model.ImageModelImpl;
-import com.iplay.jread.images.view.ImageView;
+import com.iplay.jread.images.view.IImageView;
 
 import java.util.List;
 
@@ -16,29 +16,29 @@ import java.util.List;
  */
 public class ImagePresenterImpl implements ImagePresenter, ImageModelImpl.OnLoadImageListListener {
 
-    private ImageModel mImageModel;
-    private ImageView mImageView;
+    private IImageModel mIImageModel;
+    private IImageView mIImageView;
 
-    public ImagePresenterImpl(ImageView imageView) {
-        this.mImageModel = new ImageModelImpl();
-        this.mImageView = imageView;
+    public ImagePresenterImpl(IImageView iImageView) {
+        this.mIImageModel = new ImageModelImpl();
+        this.mIImageView = iImageView;
     }
 
     @Override
     public void loadImageList() {
-        mImageView.showProgress();
-        mImageModel.loadImageList(this);
+        mIImageView.showProgress();
+        mIImageModel.loadImageList(this);
     }
 
     @Override
     public void onSuccess(List<ImageBean> list) {
-        mImageView.addImages(list);
-        mImageView.hideProgress();
+        mIImageView.addImages(list);
+        mIImageView.hideProgress();
     }
 
     @Override
     public void onFailure(String msg, Exception e) {
-        mImageView.hideProgress();
-        mImageView.showLoadFailMsg();
+        mIImageView.hideProgress();
+        mIImageView.showLoadFailMsg();
     }
 }

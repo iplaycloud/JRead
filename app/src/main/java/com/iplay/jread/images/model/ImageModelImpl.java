@@ -2,7 +2,6 @@ package com.iplay.jread.images.model;
 
 import com.iplay.jread.images.model.beans.ImageBean;
 import com.iplay.jread.commons.Urls;
-import com.iplay.jread.images.ImageJsonUtils;
 import com.iplay.jread.utils.OkHttpUtils;
 
 import java.util.List;
@@ -14,7 +13,7 @@ import java.util.List;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/22
  */
-public class ImageModelImpl implements ImageModel {
+public class ImageModelImpl implements IImageModel {
 
     /**
      * 获取图片列表

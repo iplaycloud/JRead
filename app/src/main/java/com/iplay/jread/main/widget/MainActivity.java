@@ -1,6 +1,7 @@
 package com.iplay.jread.main.widget;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -9,16 +10,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.iplay.jread.R;
 import com.iplay.jread.about.widget.AboutFragment;
-import com.iplay.jread.images.widget.ImageFragment;
+import com.iplay.jread.images.widget.ImagesListFragment;
 import com.iplay.jread.mm.home.GirlsActivity;
 import com.iplay.jread.main.presenter.MainPresenter;
 import com.iplay.jread.main.presenter.MainPresenterImpl;
 import com.iplay.jread.main.view.MainView;
 import com.iplay.jread.news.widget.NewsFragment;
 import com.iplay.jread.weather.widget.WeatherFragment;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Author : iplay
@@ -27,6 +33,18 @@ import com.iplay.jread.weather.widget.WeatherFragment;
  * Date   : 15/12/13
  */
 public class MainActivity extends AppCompatActivity implements MainView {
+
+    @BindView(R.id.tv_main_news)
+    TextView tv_main_news;
+
+    @BindView(R.id.tv_main_images)
+    TextView tv_main_images;
+
+    @BindView(R.id.tv_main_video)
+    TextView tv_main_video;
+
+    @BindView(R.id.tv_main_setting)
+    TextView tv_main_setting;
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -37,7 +55,11 @@ public class MainActivity extends AppCompatActivity implements MainView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+        ButterKnife.bind(this);
+
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
@@ -90,16 +112,56 @@ public class MainActivity extends AppCompatActivity implements MainView {
                 });
     }
 
+    public void onClick(View view)
+    {
+        switch (view.getId())
+        {
+            case R.id.tv_main_news:
+                switch2News();
+                break;
+
+            case R.id.tv_main_images:
+                switch2Images();
+
+                break;
+
+            case R.id.tv_main_video:
+                switch2Video();
+
+                break;
+
+            case R.id.tv_main_setting:
+                switch2News();
+                setMainMenuTextDefault();
+                tv_main_setting.setTextColor(Color.BLACK);
+                break;
+        }
+    }
+
+    public void setMainMenuTextDefault()
+    {
+        tv_main_news.setTextColor(Color.GRAY);
+        tv_main_images.setTextColor(Color.GRAY);
+        tv_main_video.setTextColor(Color.GRAY);
+        tv_main_setting.setTextColor(Color.GRAY);
+    }
+
     @Override
     public void switch2News() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new NewsFragment()).commit();
         mToolbar.setTitle(R.string.navigation_news);
+
+        setMainMenuTextDefault();
+        tv_main_news.setTextColor(Color.BLACK);
     }
 
     @Override
     public void switch2Images() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ImageFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ImagesListFragment()).commit();
         mToolbar.setTitle(R.string.navigation_images);
+
+        setMainMenuTextDefault();
+        tv_main_images.setTextColor(Color.BLACK);
 
         //ActivityManager.getInstance().finishActivity();
     }
@@ -111,7 +173,8 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void switch2Video() {
-
+        setMainMenuTextDefault();
+        tv_main_video.setTextColor(Color.BLACK);
     }
 
     @Override

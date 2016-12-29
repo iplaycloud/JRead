@@ -1,4 +1,4 @@
-package com.iplay.jread.news.widget;
+package com.iplay.jread.images.widget;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,48 +16,53 @@ import com.iplay.jread.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Author : iplay
  * Email  : iplaycloud@gmail.com
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/13
  */
-public class NewsFragment extends Fragment {
+public class ImagesFragment extends Fragment {
 
-    public static final int NEWS_TYPE_TOP = 0;
-    public static final int NEWS_TYPE_NBA = 1;
-    public static final int NEWS_TYPE_CARS = 2;
-    public static final int NEWS_TYPE_JOKES = 3;
+    public static final int NEWS_TYPE_MM = 0;
+    public static final int NEWS_TYPE_JOKES = 1;
 
-    private TabLayout mTablayout;
-    private ViewPager mViewPager;
+    @BindView(R.id.tab_layout_images)
+    TabLayout mTablayout;
+
+    @BindView(R.id.viewpager_images)
+    ViewPager mViewPager;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_news, null);
-        mTablayout = (TabLayout) view.findViewById(R.id.tab_layout);
-        mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
-        mViewPager.setOffscreenPageLimit(3);
-        setupViewPager(mViewPager);
 
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.top));
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.nba));
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.cars));
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.jokes));
-        mTablayout.setupWithViewPager(mViewPager);
+        ButterKnife.bind(this, view);
+
+        initView();
 
         return view;
+    }
+
+    private void initView() {
+        mViewPager.setOffscreenPageLimit(1);
+        setupViewPager(mViewPager);
+
+        mTablayout.addTab(mTablayout.newTab().setText(R.string.qutu));
+        mTablayout.addTab(mTablayout.newTab().setText(R.string.meitu));
+        mTablayout.setupWithViewPager(mViewPager);
     }
 
     private void setupViewPager(ViewPager mViewPager) {
         //Fragment中嵌套使用Fragment一定要使用getChildFragmentManager(),否则会有问题
         MyPagerAdapter adapter = new MyPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(NewsListFragment.newInstance(NEWS_TYPE_TOP), getString(R.string.top));
-        adapter.addFragment(NewsListFragment.newInstance(NEWS_TYPE_NBA), getString(R.string.nba));
-        adapter.addFragment(NewsListFragment.newInstance(NEWS_TYPE_CARS), getString(R.string.cars));
-        adapter.addFragment(NewsListFragment.newInstance(NEWS_TYPE_JOKES), getString(R.string.jokes));
+        adapter.addFragment(ImagesListFragment.newInstance(NEWS_TYPE_MM), getString(R.string.meitu));
+        adapter.addFragment(ImagesListFragment.newInstance(NEWS_TYPE_JOKES), getString(R.string.qutu));
         mViewPager.setAdapter(adapter);
     }
 

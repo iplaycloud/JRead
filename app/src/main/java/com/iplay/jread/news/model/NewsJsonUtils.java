@@ -1,4 +1,4 @@
-package com.iplay.jread.news;
+package com.iplay.jread.news.model;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

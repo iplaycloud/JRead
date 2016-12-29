@@ -1,4 +1,4 @@
-package com.iplay.jread.news;
+package com.iplay.jread.news.model;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

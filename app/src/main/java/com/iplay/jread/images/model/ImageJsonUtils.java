@@ -1,4 +1,4 @@
-package com.iplay.jread.images;
+package com.iplay.jread.images.model;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

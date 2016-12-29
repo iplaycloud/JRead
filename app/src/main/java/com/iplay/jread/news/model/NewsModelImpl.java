@@ -3,7 +3,6 @@ package com.iplay.jread.news.model;
 import com.iplay.jread.news.model.beans.NewsBean;
 import com.iplay.jread.news.model.beans.NewsDetailBean;
 import com.iplay.jread.commons.Urls;
-import com.iplay.jread.news.NewsJsonUtils;
 import com.iplay.jread.news.widget.NewsFragment;
 import com.iplay.jread.utils.OkHttpUtils;
 
@@ -25,6 +24,7 @@ public class NewsModelImpl implements NewsModel {
      */
     @Override
     public void loadNews(String url, final int type, final OnLoadNewsListListener listener) {
+
         OkHttpUtils.ResultCallback<String> loadNewsCallback = new OkHttpUtils.ResultCallback<String>() {
             @Override
             public void onSuccess(String response) {
@@ -37,6 +37,7 @@ public class NewsModelImpl implements NewsModel {
                 listener.onFailure("load news list failure.", e);
             }
         };
+
         OkHttpUtils.get(url, loadNewsCallback);
     }
 

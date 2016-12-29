@@ -11,7 +11,7 @@ import java.util.List;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/22
  */
-public interface ImageView {
+public interface IImageView {
     void addImages(List<ImageBean> list);
     void showProgress();
     void hideProgress();

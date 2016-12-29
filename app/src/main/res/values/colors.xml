@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="primary">#067cf1</color>
-    <color name="primary_dark">#067cf1</color>
+    <color name="primary">#313131</color>
+    <color name="primary_dark">#0b0b0b</color>
     <color name="primary_light">#FFCDD2</color>
     <color name="accent">#CDDC39</color>
     <color name="primary_text">#212121</color>
@@ -10,17 +10,15 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
 
-
     <color name="colorPrimary">#1a1a1a</color>
     <color name="colorPrimaryDark">#1a1a1a</color>
     <color name="colorAccent">#ffc107</color>
     <color name="swipe_background_color">#ffffff</color>
     <color name="white">#ffffff</color>
-    <color name="gray">#eeeeee</color>
+    <color name="gray">#dfe0e4</color>
     <color name="black">#000000</color>
 
-
-    <color name="theme_color">#61e7ca</color><!--App主色调-->
+    <color name="theme_color">#0b0b0b</color><!--App主色调-->
     <color name="theme_color_level2">#dfe0e4</color><!--App主色调2-->
     <color name="bg_tab_view">#f4f4f4</color><!--导航栏菜单按钮背景色-->
     <color name="list_divider">#19000000</color><!--列表item 分割线-->
