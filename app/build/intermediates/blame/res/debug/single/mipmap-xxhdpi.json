@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\js_512.png",
+        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\mipmap-xxhdpi\\js_512.png"
+    },
+    {
+        "merged": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_top_back.png",
+        "source": "F:\\OneDrive\\AndroidStudioProjects_pri\\JRead\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_top_back.png"
+    }
+]
