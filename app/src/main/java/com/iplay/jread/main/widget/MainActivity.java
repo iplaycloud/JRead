@@ -20,6 +20,7 @@ import com.iplay.jread.main.presenter.MainPresenter;
 import com.iplay.jread.main.presenter.MainPresenterImpl;
 import com.iplay.jread.main.view.MainView;
 import com.iplay.jread.news.widget.NewsFragment;
+import com.iplay.jread.video.widget.VideoFragment;
 import com.iplay.jread.weather.widget.WeatherFragment;
 
 import butterknife.BindView;
@@ -125,7 +126,7 @@ public class MainActivity extends BaseActivity implements MainView {
                 break;
 
             case R.id.tv_main_video:
-                switch2Video();
+                //switch2Video();
 
                 break;
 
@@ -171,6 +172,10 @@ public class MainActivity extends BaseActivity implements MainView {
 
     @Override
     public void switch2Video() {
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new VideoFragment()).commit();
+        mToolbar.setTitle(R.string.navigation_video);
+
         setMainMenuTextDefault();
         tv_main_video.setTextColor(Color.BLACK);
     }
