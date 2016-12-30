@@ -9,7 +9,7 @@ import android.os.Build;
 import android.text.TextUtils;
 
 import com.iplay.jread.weather.model.bean.WeatherBean;
-import com.iplay.jread.commons.Urls;
+import com.iplay.jread.commons.api.Urls;
 import com.iplay.jread.utils.LogUtils;
 import com.iplay.jread.utils.OkHttpUtils;
 import com.iplay.jread.weather.WeatherJsonUtils;

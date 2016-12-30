@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.iplay.jread.R;
+import com.iplay.jread.commons.base.BaseActivity;
 import com.iplay.jread.news.model.beans.NewsBean;
 import com.iplay.jread.news.presenter.NewsDetailPresenter;
 import com.iplay.jread.news.presenter.NewsDetailPresenterImpl;
@@ -27,13 +28,13 @@ import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/19
  */
-public class NewsDetailActivity extends SwipeBackActivity implements NewsDetailView {
+public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
 
     private NewsBean mNews;
     private HtmlTextView mTVNewsContent;
     private NewsDetailPresenter mNewsDetailPresenter;
     private ProgressBar mProgressBar;
-    private SwipeBackLayout mSwipeBackLayout;
+//    private SwipeBackLayout mSwipeBackLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +53,9 @@ public class NewsDetailActivity extends SwipeBackActivity implements NewsDetailV
             }
         });
 
-        mSwipeBackLayout = getSwipeBackLayout();
-        mSwipeBackLayout.setEdgeSize(ToolsUtil.getWidthInPx(this));
-        mSwipeBackLayout.setEdgeTrackingEnabled(SwipeBackLayout.EDGE_LEFT);
+//        mSwipeBackLayout = getSwipeBackLayout();
+//        mSwipeBackLayout.setEdgeSize(ToolsUtil.getWidthInPx(this));
+//        mSwipeBackLayout.setEdgeTrackingEnabled(SwipeBackLayout.EDGE_LEFT);
 
         mNews = (NewsBean) getIntent().getSerializableExtra("news");
 
@@ -80,5 +81,25 @@ public class NewsDetailActivity extends SwipeBackActivity implements NewsDetailV
     @Override
     public void hideProgress() {
         mProgressBar.setVisibility(View.GONE);
+    }
+
+    @Override
+    protected int getContentViewId() {
+        return 0;
+    }
+
+    @Override
+    protected int getFragmentContentId() {
+        return 0;
+    }
+
+    @Override
+    public String returnToolBarTitle() {
+        return null;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

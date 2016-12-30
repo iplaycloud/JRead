@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 
 import com.iplay.jread.R;
 import com.iplay.jread.news.model.beans.NewsBean;
-import com.iplay.jread.commons.Urls;
+import com.iplay.jread.commons.api.Urls;
 import com.iplay.jread.news.model.NewsAdapter;
 import com.iplay.jread.news.presenter.NewsPresenter;
 import com.iplay.jread.news.presenter.NewsPresenterImpl;
@@ -183,11 +183,15 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
     * */
     @Override
     public void onRefresh() {
+
+        /*
+        * 清空数据，获取最新的数据
+        * */
+
         pageIndex = 0;
         if(mData != null) {
             mData.clear();
         }
-
         /*
         * 加载数据
         * */

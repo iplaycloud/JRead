@@ -2,7 +2,7 @@ package com.iplay.jread.news.model;
 
 import com.iplay.jread.news.model.beans.NewsBean;
 import com.iplay.jread.news.model.beans.NewsDetailBean;
-import com.iplay.jread.commons.Urls;
+import com.iplay.jread.commons.api.Urls;
 import com.iplay.jread.news.widget.NewsFragment;
 import com.iplay.jread.utils.OkHttpUtils;
 

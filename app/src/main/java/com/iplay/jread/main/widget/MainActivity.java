@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,8 +14,8 @@ import android.widget.TextView;
 
 import com.iplay.jread.R;
 import com.iplay.jread.about.widget.AboutFragment;
-import com.iplay.jread.images.widget.ImagesListFragment;
-import com.iplay.jread.mm.home.GirlsActivity;
+import com.iplay.jread.commons.base.BaseActivity;
+import com.iplay.jread.images.ImagesFragment;
 import com.iplay.jread.main.presenter.MainPresenter;
 import com.iplay.jread.main.presenter.MainPresenterImpl;
 import com.iplay.jread.main.view.MainView;
@@ -32,7 +31,7 @@ import butterknife.ButterKnife;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/13
  */
-public class MainActivity extends AppCompatActivity implements MainView {
+public class MainActivity extends BaseActivity implements MainView {
 
     @BindView(R.id.tv_main_news)
     TextView tv_main_news;
@@ -157,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void switch2Images() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ImagesListFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ImagesFragment()).commit();
         mToolbar.setTitle(R.string.navigation_images);
 
         setMainMenuTextDefault();
@@ -168,7 +167,6 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void switch2Mm() {
-        startActivity(new Intent(this, GirlsActivity.class));
     }
 
     @Override
@@ -187,5 +185,20 @@ public class MainActivity extends AppCompatActivity implements MainView {
     public void switch2About() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new AboutFragment()).commit();
         mToolbar.setTitle(R.string.navigation_about);
+    }
+
+    @Override
+    protected int getContentViewId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected int getFragmentContentId() {
+        return 0;
+    }
+
+    @Override
+    public String returnToolBarTitle() {
+        return " ";
     }
 }

@@ -27,5 +27,4 @@ public interface WeatherView {
 
     void showErrorToast(String msg);
 
-
 }
