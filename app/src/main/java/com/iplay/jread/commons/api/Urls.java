@@ -34,6 +34,9 @@ public class Urls {
     // 图片
     public static final String IMAGES_URL = "http://api.laifudao.com/open/tupian.json";
 
+    // 视频
+    public static final String VIDEOS_URL = "http://c.m.163.com/nc/video/list/V9LG4CHOR/n/1-10.html";
+
     // 天气预报url
     public static final String WEATHER = "http://wthrcdn.etouch.cn/weather_mini?city=";
 

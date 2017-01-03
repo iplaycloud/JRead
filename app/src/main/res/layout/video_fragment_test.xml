@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--<fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard-->
-        <!--android:id="@+id/custom_videoplayer_standard"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200dp"/>-->
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
 
 </android.support.design.widget.CoordinatorLayout>

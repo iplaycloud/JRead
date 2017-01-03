@@ -1,4 +1,4 @@
-package com.iplay.jread.images.jokeimg.widget;
+package com.iplay.jread.video.widget;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,11 +13,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.iplay.jread.R;
-import com.iplay.jread.images.jokeimg.model.beans.ImageBean;
-import com.iplay.jread.images.jokeimg.model.ImageAdapter;
-import com.iplay.jread.images.jokeimg.presenter.ImagePresenter;
-import com.iplay.jread.images.jokeimg.presenter.ImagePresenterImpl;
-import com.iplay.jread.images.jokeimg.view.IImageView;
+import com.iplay.jread.video.model.VideoAdapter;
+import com.iplay.jread.video.model.beans.VideoBean;
+import com.iplay.jread.video.presenter.VideoPresenter;
+import com.iplay.jread.video.presenter.VideoPresenterImpl;
+import com.iplay.jread.video.view.IVideoView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,7 @@ import butterknife.ButterKnife;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/22
  */
-public class ImagesListFragment extends Fragment implements IImageView, SwipeRefreshLayout.OnRefreshListener {
+public class VideoListFragment extends Fragment implements IVideoView, SwipeRefreshLayout.OnRefreshListener {
 
     private static final String TAG = "VideoListFragment";
 
@@ -44,13 +44,13 @@ public class ImagesListFragment extends Fragment implements IImageView, SwipeRef
 
     private LinearLayoutManager mLayoutManager;
 
-    private ImageAdapter mAdapter;
-    private List<ImageBean> mData;
-    private ImagePresenter mImagePresenter;
+    private VideoAdapter mAdapter;
+    private List<VideoBean> mData;
+    private VideoPresenter mVideoPresenter;
 
-    public static ImagesListFragment newInstance(int type) {
+    public static VideoListFragment newInstance(int type) {
         Bundle args = new Bundle();
-        ImagesListFragment fragment = new ImagesListFragment();
+        VideoListFragment fragment = new VideoListFragment();
         args.putInt("type", type);
         fragment.setArguments(args);
         return fragment;
@@ -59,14 +59,14 @@ public class ImagesListFragment extends Fragment implements IImageView, SwipeRef
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mImagePresenter = new ImagePresenterImpl(this);
+        mVideoPresenter = new VideoPresenterImpl(this);
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_image, null);
+        View view = inflater.inflate(R.layout.fragment_video, null);
 
         ButterKnife.bind(this, view);
 
@@ -90,7 +90,7 @@ public class ImagesListFragment extends Fragment implements IImageView, SwipeRef
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mAdapter = new ImageAdapter(getActivity().getApplicationContext());
+        mAdapter = new VideoAdapter(getActivity().getApplicationContext());
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.addOnScrollListener(mOnScrollListener);
     }
@@ -120,11 +120,11 @@ public class ImagesListFragment extends Fragment implements IImageView, SwipeRef
 
     @Override
     public void onRefresh() {
-        mImagePresenter.loadImageList();
+        mVideoPresenter.loadVideoList();
     }
 
     @Override
-    public void addImages(List<ImageBean> list) {
+    public void addVideos(List<VideoBean> list) {
         if(mData == null) {
             mData = new ArrayList<>();
         }

@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class ImageJsonUtils {
 
-    private final static String TAG = "ImageJsonUtils";
+    private final static String TAG = "VideoJsonUtils";
     /**
      * 将获取到的json转换为图片列表对象
      * @param res

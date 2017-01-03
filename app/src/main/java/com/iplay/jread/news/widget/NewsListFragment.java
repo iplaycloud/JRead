@@ -27,6 +27,9 @@ import com.iplay.jread.utils.LogUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Description : 新闻Fragment
  * Author : iplay
@@ -38,8 +41,12 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
 
     private static final String TAG = "NewsListFragment";
 
-    private SwipeRefreshLayout mSwipeRefreshWidget;
-    private RecyclerView mRecyclerView;
+    @BindView(R.id.swipe_refresh_widget)
+    SwipeRefreshLayout mSwipeRefreshWidget;
+
+    @BindView(R.id.recycle_view)
+    RecyclerView mRecyclerView;
+
     private LinearLayoutManager mLayoutManager;
     private NewsAdapter mAdapter;
     private List<NewsBean> mData;
@@ -66,32 +73,48 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_newslist, null);
 
-        mSwipeRefreshWidget = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh_widget);
-        mSwipeRefreshWidget.setColorSchemeResources(R.color.primary,
-                R.color.primary_dark, R.color.primary_light,
-                R.color.accent);
-        mSwipeRefreshWidget.setOnRefreshListener(this);
+        ButterKnife.bind(this, view);
 
-        mRecyclerView = (RecyclerView)view.findViewById(R.id.recycle_view);
-        mRecyclerView.setHasFixedSize(true);
-
-        mLayoutManager = new LinearLayoutManager(getActivity());
-        mRecyclerView.setLayoutManager(mLayoutManager);
-
-        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mAdapter = new NewsAdapter(getActivity().getApplicationContext());
-        mAdapter.setOnItemClickListener(mOnItemClickListener);
-        mRecyclerView.setAdapter(mAdapter);
-        mRecyclerView.addOnScrollListener(mOnScrollListener);
+        initView();
 
         /*
-        * 刷新数据
+        * onRefresh 下拉刷新数据
         * */
         onRefresh();
 
         return view;
+    }
+
+    private void initView() {
+
+        //通过颜色资源文件设置进度动画的颜色资源
+        mSwipeRefreshWidget.setColorSchemeResources(R.color.primary,
+                R.color.primary_dark, R.color.primary_light,
+                R.color.accent);
+
+        //刷新事件监听
+        mSwipeRefreshWidget.setOnRefreshListener(this);
+
+        /* setHasFixedSize 的作用就是确保尺寸是通过用户输入从而确保RecyclerView的尺寸是一个常数。 */
+        mRecyclerView.setHasFixedSize(true);
+
+        /* 列表布局 */
+        mLayoutManager = new LinearLayoutManager(getActivity());
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        /* 设置负责添加、删除数据时的动画效果 */
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        /* 设置adapter */
+        mAdapter = new NewsAdapter(getActivity().getApplicationContext());
+        mAdapter.setOnItemClickListener(mOnItemClickListener);
+        mRecyclerView.setAdapter(mAdapter);
+
+        /* 设置滑动监听器 */
+        mRecyclerView.addOnScrollListener(mOnScrollListener);
     }
 
     private RecyclerView.OnScrollListener mOnScrollListener = new RecyclerView.OnScrollListener() {
@@ -108,6 +131,11 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
         public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
             super.onScrollStateChanged(recyclerView, newState);
 
+            /*
+            * RecyclerView.SCROLL_STATE_IDLE当不滚动时
+            * lastVisibleItem + 1 == mAdapter.getItemCount() 判断是否滚动到底部
+            * isShowFooter 是否显示底部加载更多
+            * */
             if (newState == RecyclerView.SCROLL_STATE_IDLE
                     && lastVisibleItem + 1 == mAdapter.getItemCount()
                     && mAdapter.isShowFooter()) {
@@ -115,7 +143,6 @@ public class NewsListFragment extends Fragment implements NewsView, SwipeRefresh
                 LogUtils.d(TAG, "loading more data");
                 mNewsPresenter.loadNews(mType, pageIndex + Urls.PAZE_SIZE);
             }
-
         }
     };
 

@@ -2,6 +2,7 @@ package com.iplay.jread.utils;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import com.google.gson.internal.$Gson$Types;
 import com.squareup.okhttp.Callback;
@@ -36,7 +37,7 @@ public class OkHttpUtils {
 
     private OkHttpUtils() {
         mOkHttpClient = new OkHttpClient();
-        mOkHttpClient.setConnectTimeout(10, TimeUnit.SECONDS);
+        mOkHttpClient.setConnectTimeout(30, TimeUnit.SECONDS);
         mOkHttpClient.setWriteTimeout(10, TimeUnit.SECONDS);
         mOkHttpClient.setReadTimeout(30, TimeUnit.SECONDS);
         //cookie enabled
@@ -63,6 +64,8 @@ public class OkHttpUtils {
 
     private void deliveryResult(final ResultCallback callback, Request request) {
 
+        Log.i("JSON", request.toString());
+
         mOkHttpClient.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Request request, final IOException e) {
@@ -73,6 +76,17 @@ public class OkHttpUtils {
             public void onResponse(Response response) throws IOException {
                 try {
                     String str = response.body().string();
+
+//                    if(str.contains("403 Forbidden"))
+//                    {
+//                        throw new Exception("403 Forbidden");
+//                    }
+
+                    if(response.code() == 403)
+                    {
+                        throw new Exception(response.toString());
+                    }
+
                     if (callback.mType == String.class) {
                         sendSuccessCallBack(callback, str);
                     } else {
