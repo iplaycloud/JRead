@@ -64,7 +64,7 @@ public class OkHttpUtils {
 
     private void deliveryResult(final ResultCallback callback, Request request) {
 
-        Log.i("JSON", request.toString());
+        Log.i("VIDEO", request.toString());
 
         mOkHttpClient.newCall(request).enqueue(new Callback() {
             @Override

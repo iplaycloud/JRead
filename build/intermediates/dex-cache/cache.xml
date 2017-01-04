@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="936ba102614f1367a63575a35886f602e1b6636c">
+        sha1="7f806e0c8ae053a8871f9e1bdd100e8c1d7e0c7f">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_512213b5141f0a12c9280a0a56d99c116e3e0263\classes.dex" />
     </item>
     <item
@@ -45,6 +45,15 @@
         revision="23.0.3"
         sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_99cce8f1921e075ab341ce1a89e69a180384b9ae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_27876cc0a3aa968f98c05e9fc19d8f01b62baeb4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,12 +75,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_a189a04c50b175052ea70a422314ac3bf9b9b4b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_dedd27aaa1de0cf650db7e4ebeefc2e781305613\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\palette-v7\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="51518e8e8f97c314a243d9def0ded91d385b6a1e">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-23.4.0_471d358c67c3dfb3464dfbf622462231622e7320\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.2.1_5829d789781ffe69d42aeb98027650dab34f7615\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,12 +147,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\fm.jiecao\jiecaovideoplayer\5.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_6fa9d219412d42fd16071f6b7127e334e3680a1e\classes.dex" />
+        sha1="5fe623755a54b2b9fe8bf4969fcb046da7ca8a05">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\fm.jiecao-jiecaovideoplayer-5.2.1_dcf70d2384e5aa033cc92e0e32270b39fc282e3c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,6 +174,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_2d546751b7dd676a9e0a71dbf68c1e83e3a9f871\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -156,12 +201,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.1.1_e2aa8de7dc39ca762a2bd6d9d21ceeea50145171\classes.dex" />
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_45692c67b9b7e28016b4461b62bbf9bbd91ac924\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,12 +228,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_3d9b360b023b23fd5e58865e87ecb5487a6a3db1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="F:\OneDrive\AndroidStudioProjects_pri\SimpleNews\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="5c5699834e9722f1c288fea2de82725d078ba127">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\SimpleNews\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_e69c8c811d16988ca7f0c701e0100813011c7dc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_b37b5101e6657aa12afaed2d2845d18bf09b02fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_ace4ef944d89cca4558209060eff96ac04319147\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -219,12 +291,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_8cc08a76963195a55a60d55b70c4a8bc81899e81\classes.dex" />
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_c91867ff744dc0a01d306f3e87e8367dd8efc019\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_f0cf8eb3038b662220a9b53d220e70c48b282c20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.google.android.exoplayer\exoplayer\r2.0.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="896f01576fdaf7a99004406ef84c17af64e38743">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.exoplayer-exoplayer-r2.0.4_d8464c3bb5c6d93f143be4ba73d360bbbfeb2cc1\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -234,6 +324,15 @@
         revision="23.0.3"
         sha1="a60a5e993c98c864010053cb901b7eab25306568">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\SimpleNews\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_313aff129984a0a45e086871ec03bfcc02e7284e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_6955b5301f4948ac1efe0f9a62fbbc0718a50e01\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -250,7 +349,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c6cb4a2fa65c77577bb4ecac6ec0a9419a83376c">
+        sha1="e77cd85c16c44c4b29e7904a1a2004050631ba50">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7891dc8325088a32a1b508f51551711e45090345\classes.dex" />
     </item>
     <item
@@ -273,30 +372,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_1d39d19acd25a41c56b2ceb8c00f8a0beefa3fc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\iplay\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.0.2\a60c039ba54c73d1133b72178e1b04133c73d13d\adapter-rxjava-2.0.2.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="a60c039ba54c73d1133b72178e1b04133c73d13d">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\adapter-rxjava-2.0.2_01037364b0ed160638879b4af916b9f2fdb4ffb9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_dd0d1c292067bec253855409b7f06178cb47f8c5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_ea1a7dbc1b81a510c47e859520d314d32cb49a5c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -327,6 +417,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\iplay\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_4c0befb5796fbe29ed99165d34ae864ac63590ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\iplay\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
         jumboMode="true"
         optimize="true"
@@ -345,12 +444,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\iplay\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
-        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_4c0befb5796fbe29ed99165d34ae864ac63590ec\classes.dex" />
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_debfa60673d664c4995f2b487ac406efdd58cda0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -360,6 +459,24 @@
         revision="23.0.3"
         sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
         <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.1_1c73f52332f3b3ed7c9db7d094141d5850aa172a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_fc8e2e9010402aa6246e57f4cdf972f8be7dff45\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_596bc3695efe90a47366e9304bbd2e953a8b22df\classes.dex" />
     </item>
     <item
         is-multidex="true"

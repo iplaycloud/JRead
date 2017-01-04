@@ -1,18 +1,18 @@
 package com.iplay.jread.video.model;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
 import com.iplay.jread.commons.api.Urls;
-import com.iplay.jread.images.jokeimg.model.ImageJsonUtils;
-import com.iplay.jread.images.jokeimg.model.beans.ImageBean;
-import com.iplay.jread.utils.OkHttpUtils;
 import com.iplay.jread.video.model.beans.VideoBean;
+import com.iplay.jread.video.utils.VideoJsonUtils;
+import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 
 /**
@@ -24,6 +24,10 @@ import java.util.List;
  */
 public class VideoModelImpl implements IVideoModel {
 
+    private OkHttpClient mOkHttpClient;
+
+    private Handler mDelivery;
+
     /**
      * 获取图片列表
      * @param listener
@@ -32,27 +36,59 @@ public class VideoModelImpl implements IVideoModel {
     public void loadVideoList(final OnLoadImageListListener listener) {
 
         String url = Urls.VIDEOS_URL;
-        OkHttpUtils.ResultCallback<String> loadNewsCallback = new OkHttpUtils.ResultCallback<String>() {
+
+        /*主线程*/
+        mDelivery = new Handler(Looper.getMainLooper());
+
+        Callback callback = new Callback() {
+
             @Override
-            public void onSuccess(String response) {
+            public void onFailure(Request request, IOException e) {
 
-                Log.i("JSON", response);
+                listener.onFailure("load video list failure.", e);
 
-                List<VideoBean> videoBeanList = VideoJsonUtils.readJson2VideoBeans(response);
-                listener.onSuccess(videoBeanList);
+                Log.i("VIDEO", "加载失败");
             }
 
             @Override
-            public void onFailure(Exception e) {
-                listener.onFailure("load video list failure.", e);
+            public void onResponse(Response response) throws IOException {
 
-                Log.i("JSON", "加载失败");
+                int code = response.code();
+                String res = response.body().string();
+
+                //System.out.println(res);
+
+                if (code == 200) {
+
+                    final List<VideoBean> videoBeanList = VideoJsonUtils.readJson2VideoBeans(res);
+
+                    System.out.println(videoBeanList.toString());
+
+                    /*在mainThread中执行*/
+                    mDelivery.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            listener.onSuccess(videoBeanList);
+                        }
+                    });
+                }
+                else
+                {
+                    Log.i("VIDEO", code + res);
+                }
             }
         };
 
-        //网络请求
-        OkHttpUtils.get(url, loadNewsCallback);
+        mOkHttpClient = new OkHttpClient();
 
+        final Request request = new Request.Builder()
+                .url(url)
+                .header("User-Agent", "Mozilla/5.0 (Linux; Android 7.1; Nexus 6 Build/NDE63X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036903 Safari/537.36 MicroMessenger/6.5.3.980 NetType/WIFI Language/zh_CN")
+                .build();
+
+        Log.i("VIDEO", request.toString());
+
+        mOkHttpClient.newCall(request).enqueue(callback);
     }
 
     public interface OnLoadImageListListener {

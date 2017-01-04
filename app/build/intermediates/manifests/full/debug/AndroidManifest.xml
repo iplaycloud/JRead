@@ -5,7 +5,7 @@
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,8 +31,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.iplay.jread.news.widget.NewsDetailActivity" />
-        <activity android:name="com.iplay.jread.mm.home.GirlsActivity" />
-        <activity android:name="com.iplay.jread.mm.girl.GirlActivity" />
+        <activity android:name="com.iplay.jread.images.mm.widget.detailgirl.GirlActivity" />
     </application>
 
 </manifest>

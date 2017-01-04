@@ -218,4 +218,8 @@ public class VideoBean implements Serializable {
         this.topicName = topicName;
     }
 
+    @Override
+    public String toString() {
+        return title;
+    }
 }

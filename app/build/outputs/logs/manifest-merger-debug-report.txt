@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml
@@ -27,6 +27,7 @@ ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManif
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [fm.jiecao:jiecaovideoplayer:5.2.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\fm.jiecao\jiecaovideoplayer\5.2.1\AndroidManifest.xml:13:5-79
 	android:name
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
@@ -46,15 +47,23 @@ ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManif
 	android:name
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:13:22-81
 application
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:15:5-34:19
+ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:15:5-33:19
 MERGED from [JRead:swipeback:unspecified] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\JRead\swipeback\unspecified\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:design:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:palette-v7:23.4.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\palette-v7\23.4.0\AndroidManifest.xml:22:5-23:19
 MERGED from [de.hdodenhof:circleimageview:1.3.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\AndroidManifest.xml:9:5-20
 MERGED from [org.sufficientlysecure:html-textview:1.3] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\org.sufficientlysecure\html-textview\1.3\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-v4:23.4.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [fm.jiecao:jiecaovideoplayer:5.2.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\fm.jiecao\jiecaovideoplayer\5.2.1\AndroidManifest.xml:15:5-17:38
+MERGED from [com.android.support:appcompat-v7:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:18:9-41
 	android:supportsRtl
@@ -83,20 +92,15 @@ activity#com.iplay.jread.news.widget.NewsDetailActivity
 ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:31:9-68
 	android:name
 		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:31:19-65
-activity#com.iplay.jread.mm.home.GirlsActivity
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:9-59
+activity#com.iplay.jread.images.mm.widget.detailgirl.GirlActivity
+ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:9-78
 	android:name
-		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:19-56
-activity#com.iplay.jread.mm.girl.GirlActivity
-ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:33:9-58
-	android:name
-		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:33:19-55
+		ADDED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml:32:19-75
 uses-sdk
 INJECTED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
 MERGED from [JRead:swipeback:unspecified] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\JRead\swipeback\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:23.1.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:palette-v7:23.4.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\palette-v7\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [de.hdodenhof:circleimageview:1.3.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\AndroidManifest.xml:5:5-7:41
@@ -104,9 +108,21 @@ MERGED from [org.sufficientlysecure:html-textview:1.3] F:\OneDrive\AndroidStudio
 MERGED from [com.jakewharton:butterknife:8.1.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.1.0\AndroidManifest.xml:5:5-43
 MERGED from [com.jude:easyrecyclerview:4.0.2] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.jude\easyrecyclerview\4.0.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:recyclerview-v7:23.4.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [jp.wasabeef:glide-transformations:2.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\jp.wasabeef\glide-transformations\2.0.1\AndroidManifest.xml:8:5-10:41
 MERGED from [io.reactivex:rxandroid:1.2.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.1\AndroidManifest.xml:19:5-43
+MERGED from [fm.jiecao:jiecaovideoplayer:5.2.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\fm.jiecao\jiecaovideoplayer\5.2.1\AndroidManifest.xml:8:5-11:104
+MERGED from [com.android.support:appcompat-v7:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.0.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.android.exoplayer:exoplayer:r2.0.4] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\com.google.android.exoplayer\exoplayer\r2.0.4\AndroidManifest.xml:21:5-23:41
+	tools:overrideLibrary
+		ADDED from [fm.jiecao:jiecaovideoplayer:5.2.1] F:\OneDrive\AndroidStudioProjects_pri\JRead\app\build\intermediates\exploded-aar\fm.jiecao\jiecaovideoplayer\5.2.1\AndroidManifest.xml:11:9-101
 	android:targetSdkVersion
 		INJECTED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml
 		INJECTED from F:\OneDrive\AndroidStudioProjects_pri\JRead\app\src\main\AndroidManifest.xml
