@@ -40,6 +40,15 @@ public class VideoModelImpl implements IVideoModel {
         /*主线程*/
         mDelivery = new Handler(Looper.getMainLooper());
 
+        mOkHttpClient = new OkHttpClient();
+
+        final Request request = new Request.Builder()
+                .url(url)
+                .header("User-Agent", "Mozilla/5.0 (Linux; Android 7.1; Nexus 6 Build/NDE63X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036903 Safari/537.36 MicroMessenger/6.5.3.980 NetType/WIFI Language/zh_CN")
+                .build();
+
+        Log.i("VIDEO", request.toString());
+
         Callback callback = new Callback() {
 
             @Override
@@ -56,13 +65,13 @@ public class VideoModelImpl implements IVideoModel {
                 int code = response.code();
                 String res = response.body().string();
 
-                //System.out.println(res);
+                Log.i("VIDEO", "网络取到的原始数据: " + res);
 
                 if (code == 200) {
 
                     final List<VideoBean> videoBeanList = VideoJsonUtils.readJson2VideoBeans(res);
 
-                    System.out.println(videoBeanList.toString());
+                    Log.i("VIDEO", "取到的数据: " + videoBeanList.toString());
 
                     /*在mainThread中执行*/
                     mDelivery.post(new Runnable() {
@@ -78,15 +87,6 @@ public class VideoModelImpl implements IVideoModel {
                 }
             }
         };
-
-        mOkHttpClient = new OkHttpClient();
-
-        final Request request = new Request.Builder()
-                .url(url)
-                .header("User-Agent", "Mozilla/5.0 (Linux; Android 7.1; Nexus 6 Build/NDE63X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036903 Safari/537.36 MicroMessenger/6.5.3.980 NetType/WIFI Language/zh_CN")
-                .build();
-
-        Log.i("VIDEO", request.toString());
 
         mOkHttpClient.newCall(request).enqueue(callback);
     }

@@ -48,7 +48,8 @@ public class VideoJsonUtils {
             }
 
             JsonArray jsonArray = jsonElement.getAsJsonArray();
-            for (int i = 1; i < jsonArray.size(); i++) {
+
+            for (int i = 0; i < jsonArray.size(); i++) {
                 JsonObject jo = jsonArray.get(i).getAsJsonObject();
 
                 VideoBean video = JsonUtils.deserialize(jo, VideoBean.class);

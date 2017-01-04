@@ -1,5 +1,6 @@
 package com.iplay.jread.commons.base;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
