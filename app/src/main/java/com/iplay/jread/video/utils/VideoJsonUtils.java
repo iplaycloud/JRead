@@ -12,7 +12,6 @@ import com.iplay.jread.news.model.beans.NewsBean;
 import com.iplay.jread.utils.JsonUtils;
 import com.iplay.jread.utils.LogUtils;
 import com.iplay.jread.video.model.beans.VideoBean;
-import com.iplay.jread.video.model.beans.VideosBean;
 
 import java.util.ArrayList;
 import java.util.List;
