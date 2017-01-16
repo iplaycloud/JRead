@@ -2,6 +2,7 @@ package com.iplay.jread.news.widget;
 
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,9 +18,6 @@ import com.iplay.jread.utils.ToolsUtil;
 
 import org.sufficientlysecure.htmltextview.HtmlTextView;
 
-import me.imid.swipebacklayout.lib.SwipeBackLayout;
-import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
-
 /**
  * Description : 新闻详情界面
  * Author : JiangShen
@@ -27,13 +25,12 @@ import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
  * Blog   : www.iplaycloud.xyz
  * Date   : 15/12/19
  */
-public class NewsDetailActivity extends SwipeBackActivity implements NewsDetailView {
+public class NewsDetailActivity extends AppCompatActivity implements NewsDetailView {
 
     private NewsBean mNews;
     private HtmlTextView mTVNewsContent;
     private NewsDetailPresenter mNewsDetailPresenter;
     private ProgressBar mProgressBar;
-    private SwipeBackLayout mSwipeBackLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +48,6 @@ public class NewsDetailActivity extends SwipeBackActivity implements NewsDetailV
                 onBackPressed();
             }
         });
-
-        mSwipeBackLayout = getSwipeBackLayout();
-        mSwipeBackLayout.setEdgeSize(ToolsUtil.getWidthInPx(this));
-        mSwipeBackLayout.setEdgeTrackingEnabled(SwipeBackLayout.EDGE_LEFT);
 
         mNews = (NewsBean) getIntent().getSerializableExtra("news");
 
